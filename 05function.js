@@ -96,35 +96,15 @@ let taliv = 100
 function add(a){
     return a + 10
 }
-
 function sub(a){
     return a - 10
 }
-
 function higherValue(a, func1, func2){
     let result = func1(a)
     let result2 = func2(result)
     return result2
 }
-
 let highResult = higherValue(taliv, add, sub)
 console.log(highResult)
 
 
-
-function higherValueFunction(func1, func2, value) {
-    let result1 = func1(value);
-    let finalResult = func2(result1);
-    return finalResult;
-}
-
-function double(x) {
-    return x * 2;
-}
-
-function square(x) {
-    return x * x;
-}
-
-let resultx = higherValueFunction(double, square, 3);
-console.log(resultx);
